@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from fastapi_msgspec.responses import MsgSpecJSONResponse
-from starlette.testclient import TestClient
 from starlette.requests import Request
+from starlette.testclient import TestClient
 
+from fastapi_msgspec.responses import MsgSpecJSONResponse
 from fastapi_msgspec.routing import MsgSpecRoute
 
 app = FastAPI(default_response_class=MsgSpecJSONResponse)
